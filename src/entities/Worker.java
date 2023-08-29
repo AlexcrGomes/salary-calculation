@@ -74,7 +74,6 @@ public class Worker {
 		double sum = baseSalary;
 		LocalDate cal = LocalDate.of(year, month, 1);
 		for(HourContract c : contracts) {
-			//cal.atTime(c.getDate());
 			cal = c.getDate();
 			int c_year = cal.getYear();
 			int c_month = cal.getMonthValue();
